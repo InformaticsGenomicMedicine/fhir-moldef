@@ -1,0 +1,88 @@
+[project]
+name = "fhir.moldef" 
+version = "0.1.0" 
+description = "A Python implementation of the HL7 FHIR MolecularDefinition resource that supports associated profiles and enables bidirectional translation between MolecularDefinition profiles and genomic representations, including VRS, HGVS, and SPDI."
+readme = "README.md"
+authors = [
+    {name = "Salem Bajjali"},
+    {name = "Robert R. Freimuth"},
+]
+
+license = {file = "LICENSE"}
+requires-python = ">=3.11"
+keywords = [
+    "FHIR",
+    "MolecularDefinition",
+    "FHIR-python"
+]  
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: Healthcare Industry",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+dependencies = [
+    "pydantic==2.8.2",
+    "ga4gh.vrs[extras]==2.3.1",
+    "fhir-core==1.1.4",
+    "fhir-resources==8.0.0",
+    "orjson==3.11.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==7.4.4",
+    "deepdiff==8.6.1",
+    "ruff==0.8.3"
+]
+
+notebooks = [
+    "ipykernel==6.28.0",
+    "openpyxl==3.1.5",
+    "pandas==2.2.3",
+]
+
+[build-system]
+requires = ["setuptools>=65.3", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+src = ["src"]
+exclude = ["notebooks", "data", "edits"]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = [
+    "F",  # https://docs.astral.sh/ruff/rules/#pyflakes-f
+    "E", "W",  # https://docs.astral.sh/ruff/rules/#pycodestyle-e-w
+    "I",  # https://docs.astral.sh/ruff/rules/#isort-i
+    "B",  # https://docs.astral.sh/ruff/rules/#flake8-bugbear-b
+    "UP",  # https://docs.astral.sh/ruff/rules/#pyupgrade-up
+    "SIM",  # https://docs.astral.sh/ruff/rules/#flake8-simplify-sim
+    "ARG",  # https://docs.astral.sh/ruff/rules/#flake8-unused-arguments-arg
+    "S",  # https://docs.astral.sh/ruff/rules/#flake8-bandit-s
+   ]
+
+ignore = ["E501"] # Ruff format already handles long lines
+fixable = ["ALL"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*" = [
+    "S101",   # assert is expected in tests
+    "ARG",    # Fixtures often appear unused
+    "D",      # Docstrings optional in tests
+]
+
+[tool.ruff.format]
+quote-style = "double"  # Enforce double quotes
+docstring-code-format = true  # Format code inside docstrings
