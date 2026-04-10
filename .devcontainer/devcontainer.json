@@ -1,13 +1,13 @@
 {
-    "name": "fhir-moldef",
-    "image": "mcr.microsoft.com/devcontainers/python:1-3.11-bullseye",
-    "postCreateCommand": "pip install --upgrade pip setuptools wheel && pip install -e '.[dev]'",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "ms-toolsai.jupyter",
-                "daylerees.rainglow"
-            ]
-        }
+  "name": "fhir-moldef",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.11-bullseye",
+  "postCreateCommand": "pip install --upgrade pip && pip install uv && uv sync --all-extras",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "daylerees.rainglow"
+      ]
     }
+  }
 }
