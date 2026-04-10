@@ -119,16 +119,19 @@ Confirm the package was installed successfully
 
 ## Local Setup
 
-Clone the repository and install the package for local development.
+Clone the repository and install the package in editable mode based on the parts of the project you want to work with.
 
 ```bash
-git clone https://github.com/YourUsername/fhir-moldef.git
+git clone https://github.com/InformaticsGenomicMedicine/fhir-moldef.git
 cd fhir-moldef
 
 uv venv
 source .venv/bin/activate
 
-uv pip install -e .[dev]
+# Optional extras: dev, notebooks, translators
+# Install all extras with: uv sync --all-extras
+# Install multiple extras with: uv sync --extra dev --extra notebooks
+uv sync --extra dev
 ```
 
 ## Contributing
