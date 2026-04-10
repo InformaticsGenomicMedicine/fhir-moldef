@@ -29,27 +29,33 @@ classifiers = [
 
 dependencies = [
     "pydantic==2.8.2",
-    "ga4gh.vrs[extras]==2.3.1",
     "fhir-core==1.1.4",
     "fhir-resources==8.0.0",
-    "orjson==3.11.6",
 ]
 
 [project.optional-dependencies]
-dev = [
-    "pytest==7.4.4",
-    "deepdiff==8.6.1",
-    "ruff==0.8.3"
+translators = [
+    "ga4gh.vrs[extras]==2.3.1",
+    "orjson==3.11.6",
 ]
 
 notebooks = [
     "ipykernel==6.28.0",
-    "openpyxl==3.1.5",
-    "pandas==2.2.3",
 ]
 
+dev = [
+    "ga4gh.vrs[extras]==2.3.1",
+    "pytest==7.4.4",
+    "deepdiff==8.6.1",
+    "ruff==0.8.3",
+]
+
+[project.urls]
+Repository = "https://github.com/InformaticsGenomicMedicine/fhir-moldef"
+Issues = "https://github.com/InformaticsGenomicMedicine/fhir-moldef/issues"
+
 [build-system]
-requires = ["setuptools>=65.3", "setuptools_scm>=8"]
+requires = ["setuptools>=65.3"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
