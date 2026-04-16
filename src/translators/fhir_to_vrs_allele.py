@@ -468,7 +468,6 @@ class FhirToVrsAlleleTranslator:
             "id": None,
             "name": None,
             "description": None,
-            "digest": None,
             "aliases": [],
             "extensions": [],
         }
