@@ -582,7 +582,7 @@ class VrsToFhirAlleleTranslator:
         seqref_residue_alphabet = getattr(source, "residueAlphabet", None)
         seqref_sequence = self._extract_str(getattr(source, "sequence", None))
         molecule_type = self.map_mol_type(ao)
-        # NOTE: Circular is currently not represnted when we are going from vrs to fhir.
+        # NOTE: Circular is currently not represented when we are going from vrs to FHIR.
 
         # NOTE: While only `refgetAccession` is required, if `sequence` is provided and we want to include `residueAlphabet`,
         # we must include both — since `residueAlphabet` is tied to the literal representation, which requires a sequence value.
