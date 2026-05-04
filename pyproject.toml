@@ -65,7 +65,7 @@ where = ["src"]
 src = ["src"]
 exclude = ["notebooks", "data", "edits"]
 line-length = 88
-target-version = "py311"
+target-version = "py312"
 
 [tool.ruff.lint]
 select = [
