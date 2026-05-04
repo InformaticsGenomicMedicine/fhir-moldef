@@ -1,7 +1,7 @@
 {
   "name": "fhir-moldef",
-  "image": "mcr.microsoft.com/devcontainers/python:1-3.11-bullseye",
-  "postCreateCommand": "pip install --upgrade pip && pip install uv && uv sync --all-extras",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
+  "postCreateCommand": "pip install --upgrade pip uv && uv sync --all-extras",
   "customizations": {
     "vscode": {
       "extensions": [
