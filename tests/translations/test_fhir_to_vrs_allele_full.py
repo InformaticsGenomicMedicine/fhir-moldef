@@ -1,9 +1,9 @@
 import pytest
 from ga4gh.vrs.models import Allele as VrsAllele
 
-from profiles.allele import Allele as FhirAllele
+from fhir_moldef.profiles.allele import Allele as FhirAllele
 from tests.translations.examples.allele_test_data import fhir_synthetic_data, vrs_synthetic_data
-from translators.fhir_to_vrs_allele import FhirToVrsAlleleTranslator
+from fhir_moldef.translators.fhir_to_vrs_allele import FhirToVrsAlleleTranslator
 
 @pytest.fixture
 def fhir_to():

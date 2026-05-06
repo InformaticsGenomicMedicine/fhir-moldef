@@ -1,6 +1,6 @@
 import pytest
 
-from translators.variation_to_fhir import VariationToFhirTranslator
+from fhir_moldef.translators.variation_to_fhir import VariationToFhirTranslator
 
 # Example from vrs-python translation test module
 

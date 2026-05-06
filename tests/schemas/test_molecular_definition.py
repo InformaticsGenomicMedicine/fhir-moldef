@@ -2,7 +2,7 @@ import pytest
 from deepdiff import DeepDiff
 from pydantic import ValidationError
 
-from resources.moleculardefinition import MolecularDefinition
+from fhir_moldef.resources.moleculardefinition import MolecularDefinition
 
 
 @pytest.fixture
