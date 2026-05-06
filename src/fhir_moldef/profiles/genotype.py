@@ -4,9 +4,9 @@ from typing import ClassVar
 from fhir.resources import fhirtypes
 from pydantic import Field, model_validator
 
-import resources.fhirtypesextra as fhirtypesextra
-from exceptions.fhir import ElementNotAllowedError, InvalidTypeError
-from resources.moleculardefinition import MolecularDefinition
+import fhir_moldef.resources.fhirtypesextra as fhirtypesextra
+from fhir_moldef.exceptions.fhir import ElementNotAllowedError, InvalidTypeError
+from fhir_moldef.resources.moleculardefinition import MolecularDefinition
 
 
 class Genotype(MolecularDefinition):

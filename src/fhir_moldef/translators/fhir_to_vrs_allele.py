@@ -8,15 +8,15 @@ from ga4gh.vrs.models import (
     sequenceString,
 )
 
-from translators.constants.vrs_json_pointers import allele_identifiers as ALLELE_PTRS
-from translators.constants.vrs_json_pointers import extension_identifiers as EXT_PTRS
-from translators.constants.vrs_json_pointers import (
+from fhir_moldef.translators.constants.vrs_json_pointers import allele_identifiers as ALLELE_PTRS
+from fhir_moldef.translators.constants.vrs_json_pointers import extension_identifiers as EXT_PTRS
+from fhir_moldef.translators.constants.vrs_json_pointers import (
     literal_sequence_expression_identifiers as LSE,
 )
-from translators.constants.vrs_json_pointers import (
+from fhir_moldef.translators.constants.vrs_json_pointers import (
     sequence_location_identifiers as SEQ_LOC,
 )
-from translators.constants.vrs_json_pointers import (
+from fhir_moldef.translators.constants.vrs_json_pointers import (
     sequence_reference_identifiers as SEQ_REF,
 )
 

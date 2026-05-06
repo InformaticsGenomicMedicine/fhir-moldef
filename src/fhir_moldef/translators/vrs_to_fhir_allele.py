@@ -6,14 +6,14 @@ from fhir.resources.quantity import Quantity
 from fhir.resources.reference import Reference
 from ga4gh.vrs.dataproxy import create_dataproxy
 
-from conventions.coordinate_systems import vrs_coordinate_interval
-from conventions.refseq_identifiers import (
+from fhir_moldef.conventions.coordinate_systems import vrs_coordinate_interval
+from fhir_moldef.conventions.refseq_identifiers import (
     detect_sequence_type,
     translate_sequence_id,
 )
-from profiles.allele import Allele as FhirAllele
-from profiles.sequence import Sequence as FhirSequence
-from resources.moleculardefinition import (
+from fhir_moldef.profiles.allele import Allele as FhirAllele
+from fhir_moldef.profiles.sequence import Sequence as FhirSequence
+from fhir_moldef.resources.moleculardefinition import (
     MolecularDefinitionLocation,
     MolecularDefinitionLocationSequenceLocation,
     MolecularDefinitionLocationSequenceLocationCoordinateInterval,
@@ -21,21 +21,21 @@ from resources.moleculardefinition import (
     MolecularDefinitionRepresentation,
     MolecularDefinitionRepresentationLiteral,
 )
-from translators.constants.vrs_json_pointers import allele_identifiers as ALLELE_PTRS
-from translators.constants.vrs_json_pointers import extension_identifiers as EXT_PTRS
-from translators.constants.vrs_json_pointers import (
+from fhir_moldef.translators.constants.vrs_json_pointers import allele_identifiers as ALLELE_PTRS
+from fhir_moldef.translators.constants.vrs_json_pointers import extension_identifiers as EXT_PTRS
+from fhir_moldef.translators.constants.vrs_json_pointers import (
     literal_sequence_expression_identifiers as LSE_PTRS,
 )
-from translators.constants.vrs_json_pointers import (
+from fhir_moldef.translators.constants.vrs_json_pointers import (
     sequence_location_identifiers as SEQ_LOC_PTRS,
 )
-from translators.constants.vrs_json_pointers import (
+from fhir_moldef.translators.constants.vrs_json_pointers import (
     sequence_reference_identifiers as SEQ_REF_PTRS,
 )
-from translators.validations.allele import (
+from fhir_moldef.translators.validations.allele import (
     validate_vrs_allele,
 )
-from vrs_tools.normalizer import VariantNormalizer
+from fhir_moldef.vrs_tools.normalizer import VariantNormalizer
 
 
 class VrsToFhirAlleleTranslator:

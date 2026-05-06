@@ -11,15 +11,15 @@ from ga4gh.vrs.models import (
     sequenceString,
 )
 
-from conventions.coordinate_systems import vrs_coordinate_interval
-from conventions.refseq_identifiers import (
+from fhir_moldef.conventions.coordinate_systems import vrs_coordinate_interval
+from fhir_moldef.conventions.refseq_identifiers import (
     detect_sequence_type,
     refseq_to_fhir_id,
     validate_accession,
 )
-from profiles.allele import Allele as FhirAllele
-from profiles.sequence import Sequence as FhirSequence
-from resources.moleculardefinition import (
+from fhir_moldef.profiles.allele import Allele as FhirAllele
+from fhir_moldef.profiles.sequence import Sequence as FhirSequence
+from fhir_moldef.resources.moleculardefinition import (
     MolecularDefinitionLocation,
     MolecularDefinitionLocationSequenceLocation,
     MolecularDefinitionLocationSequenceLocationCoordinateInterval,
@@ -27,7 +27,7 @@ from resources.moleculardefinition import (
     MolecularDefinitionRepresentation,
     MolecularDefinitionRepresentationLiteral,
 )
-from vrs_tools.normalizer import VariantNormalizer
+from fhir_moldef.vrs_tools.normalizer import VariantNormalizer
 
 
 class AlleleBuilder:

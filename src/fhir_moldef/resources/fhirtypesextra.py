@@ -17,92 +17,92 @@ EmptyStringType = Annotated[str, StringAllowEmpty()]
 
 MolecularDefinitionType = create_fhir_type(
     "MolecularDefinitionType",
-    "resources.moleculardefinition.MolecularDefinition",
+    "fhir_moldef.resources.moleculardefinition.MolecularDefinition",
 )
 
 MolecularDefinitionLocationType = create_fhir_type(
     "MolecularDefinitionLocationType",
-    "resources.moleculardefinition.MolecularDefinitionLocation",
+    "fhir_moldef.resources.moleculardefinition.MolecularDefinitionLocation",
 )
 
 MolecularDefinitionLocationSequenceLocationType = create_fhir_type(
     "MolecularDefinitionLocationSequenceLocationType",
-    "resources.moleculardefinition.MolecularDefinitionLocationSequenceLocation",
+    "fhir_moldef.resources.moleculardefinition.MolecularDefinitionLocationSequenceLocation",
 )
 
 MolecularDefinitionLocationSequenceLocationCoordinateIntervalType = create_fhir_type(
     "MolecularDefinitionLocationSequenceLocationCoordinateIntervalType",
-    "resources.moleculardefinition.MolecularDefinitionLocationSequenceLocationCoordinateInterval",
+    "fhir_moldef.resources.moleculardefinition.MolecularDefinitionLocationSequenceLocationCoordinateInterval",
 )
 
 MolecularDefinitionLocationSequenceLocationCoordinateIntervalCoordinateSystemType = create_fhir_type(
     "MolecularDefinitionLocationSequenceLocationCoordinateIntervalCoordinateSystemType",
-    "resources.moleculardefinition.MolecularDefinitionLocationSequenceLocationCoordinateIntervalCoordinateSystem",
+    "fhir_moldef.resources.moleculardefinition.MolecularDefinitionLocationSequenceLocationCoordinateIntervalCoordinateSystem",
 )
 
 MolecularDefinitionLocationFeatureLocationType = create_fhir_type(
     "MolecularDefinitionLocationFeatureLocationType",
-    "resources.moleculardefinition.MolecularDefinitionLocationFeatureLocation",
+    "fhir_moldef.resources.moleculardefinition.MolecularDefinitionLocationFeatureLocation",
 )
 
 MolecularDefinitionRepresentationType = create_fhir_type(
     "MolecularDefinitionRepresentationType",
-    "resources.moleculardefinition.MolecularDefinitionRepresentation",
+    "fhir_moldef.resources.moleculardefinition.MolecularDefinitionRepresentation",
 )
 
 MolecularDefinitionRepresentationLiteralType = create_fhir_type(
     "MolecularDefinitionRepresentationLiteralType",
-    "resources.moleculardefinition.MolecularDefinitionRepresentationLiteral",
+    "fhir_moldef.resources.moleculardefinition.MolecularDefinitionRepresentationLiteral",
 )
 
 MolecularDefinitionRepresentationExtractedType = create_fhir_type(
     "MolecularDefinitionRepresentationExtractedType",
-    "resources.moleculardefinition.MolecularDefinitionRepresentationExtracted",
+    "fhir_moldef.resources.moleculardefinition.MolecularDefinitionRepresentationExtracted",
 )
 
 MolecularDefinitionRepresentationExtractedCoordinateIntervalType = create_fhir_type(
     "MolecularDefinitionRepresentationExtractedCoordinateIntervalType",
-    "resources.moleculardefinition.MolecularDefinitionRepresentationExtractedCoordinateInterval",
+    "fhir_moldef.resources.moleculardefinition.MolecularDefinitionRepresentationExtractedCoordinateInterval",
 )
 
 MolecularDefinitionRepresentationExtractedCoordinateIntervalCoordinateSystemType = create_fhir_type(
     "MolecularDefinitionRepresentationExtractedCoordinateIntervalCoordinateSystemType",
-    "resources.moleculardefinition.MolecularDefinitionRepresentationExtractedCoordinateIntervalCoordinateSystem",
+    "fhir_moldef.resources.moleculardefinition.MolecularDefinitionRepresentationExtractedCoordinateIntervalCoordinateSystem",
 )
 
 MolecularDefinitionRepresentationRepeatedType = create_fhir_type(
     "MolecularDefinitionRepresentationRepeatedType",
-    "resources.moleculardefinition.MolecularDefinitionRepresentationRepeated",
+    "fhir_moldef.resources.moleculardefinition.MolecularDefinitionRepresentationRepeated",
 )
 
 MolecularDefinitionRepresentationConcatenatedType = create_fhir_type(
     "MolecularDefinitionRepresentationConcatenatedType",
-    "resources.moleculardefinition.MolecularDefinitionRepresentationConcatenated",
+    "fhir_moldef.resources.moleculardefinition.MolecularDefinitionRepresentationConcatenated",
 )
 
 MolecularDefinitionRepresentationConcatenatedSequenceElementType = create_fhir_type(
     "MolecularDefinitionRepresentationConcatenatedSequenceElementType",
-    "resources.moleculardefinition.MolecularDefinitionRepresentationConcatenatedSequenceElement",
+    "fhir_moldef.resources.moleculardefinition.MolecularDefinitionRepresentationConcatenatedSequenceElement",
 )
 
 MolecularDefinitionRepresentationRelativeType = create_fhir_type(
     "MolecularDefinitionRepresentationRelativeType",
-    "resources.moleculardefinition.MolecularDefinitionRepresentationRelative",
+    "fhir_moldef.resources.moleculardefinition.MolecularDefinitionRepresentationRelative",
 )
 
 MolecularDefinitionRepresentationRelativeEditType = create_fhir_type(
     "MolecularDefinitionRepresentationRelativeEditType",
-    "resources.moleculardefinition.MolecularDefinitionRepresentationRelativeEdit",
+    "fhir_moldef.resources.moleculardefinition.MolecularDefinitionRepresentationRelativeEdit",
 )
 
 MolecularDefinitionRepresentationRelativeEditCoordinateIntervalType = create_fhir_type(
     "MolecularDefinitionRepresentationRelativeEditCoordinateIntervalType",
-    "resources.moleculardefinition.MolecularDefinitionRepresentationRelativeEditCoordinateInterval",
+    "fhir_moldef.resources.moleculardefinition.MolecularDefinitionRepresentationRelativeEditCoordinateInterval",
 )
 
 MolecularDefinitionRepresentationRelativeEditCoordinateIntervalCoordinateSystemType = create_fhir_type(
     "MolecularDefinitionRepresentationRelativeEditCoordinateIntervalCoordinateSystemType",
-    "resources.moleculardefinition.MolecularDefinitionRepresentationRelativeEditCoordinateIntervalCoordinateSystem",
+    "fhir_moldef.resources.moleculardefinition.MolecularDefinitionRepresentationRelativeEditCoordinateIntervalCoordinateSystem",
 )
 
 __all__ = [

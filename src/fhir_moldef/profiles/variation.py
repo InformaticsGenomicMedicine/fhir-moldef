@@ -3,7 +3,7 @@ from typing import ClassVar
 from fhir.resources import fhirtypes
 from pydantic import model_validator
 
-from exceptions.fhir import (
+from fhir_moldef.exceptions.fhir import (
     InvalidFocusCodingDisplay,
     InvalidMoleculeTypeError,
     MemberStateNotAllowedError,
@@ -17,7 +17,7 @@ from exceptions.fhir import (
     MultipleContextState,
     MultipleLocation,
 )
-from resources.moleculardefinition import MolecularDefinition
+from fhir_moldef.resources.moleculardefinition import MolecularDefinition
 
 
 class Variation(MolecularDefinition):
