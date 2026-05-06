@@ -13,9 +13,9 @@ from ga4gh.vrs.models import (
     SequenceReference,
     sequenceString,
 )
-from profiles.allele import Allele as FhirAllele
-from profiles.sequence import Sequence as FhirSequence
-from resources.moleculardefinition import (
+from fhir_moldef.profiles.allele import Allele as FhirAllele
+from fhir_moldef.profiles.sequence import Sequence as FhirSequence
+from fhir_moldef.resources.moleculardefinition import (
     MolecularDefinitionLocation,
     MolecularDefinitionLocationSequenceLocation,
     MolecularDefinitionLocationSequenceLocationCoordinateInterval,
@@ -24,16 +24,16 @@ from resources.moleculardefinition import (
     MolecularDefinitionRepresentationLiteral,
 )
 
-from conventions.coordinate_systems import vrs_coordinate_interval
-from conventions.refseq_identifiers import (
+from fhir_moldef.conventions.coordinate_systems import vrs_coordinate_interval
+from fhir_moldef.conventions.refseq_identifiers import (
     detect_sequence_type,
     refseq_to_fhir_id,
     translate_sequence_id,
     validate_accession,
 )
-from translators.validations.allele import validate_allele_profile, validate_vrs_allele
-from translators.validations.indexing import apply_indexing
-from vrs_tools.normalizer import VariantNormalizer
+from fhir_moldef.translators.validations.allele import validate_allele_profile, validate_vrs_allele
+from fhir_moldef.translators.validations.indexing import apply_indexing
+from fhir_moldef.vrs_tools.normalizer import VariantNormalizer
 
 class MinimalFhirAlleleToVrsAlleleTranslator:
     """Provide minimal translation from a FHIR Allele Profile to a VRS Allele object."""

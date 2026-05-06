@@ -1,4 +1,4 @@
-from exceptions.utils import (
+from fhir_moldef.exceptions.utils import (
     InvalidCoordinateSystemError,
 )
 

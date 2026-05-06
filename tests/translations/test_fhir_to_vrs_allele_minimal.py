@@ -1,7 +1,7 @@
 import pytest
 
-from profiles.allele import Allele as FhirAllele
-from translators.minimal_allele import MinimalFhirAlleleToVrsAlleleTranslator
+from fhir_moldef.profiles.allele import Allele as FhirAllele
+from fhir_moldef.translators.minimal_allele import MinimalFhirAlleleToVrsAlleleTranslator
 
 
 @pytest.fixture

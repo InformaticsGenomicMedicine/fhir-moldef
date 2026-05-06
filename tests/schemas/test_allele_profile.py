@@ -3,7 +3,7 @@ from copy import deepcopy
 import pytest
 from fhir.resources.reference import Reference
 
-from exceptions.fhir import (
+from fhir_moldef.exceptions.fhir import (
     # MissingFocusCodingSystem,
     InvalidFocusCodingDisplay,
     InvalidMoleculeTypeError,
@@ -16,7 +16,7 @@ from exceptions.fhir import (
     MultipleContextState,
     MultipleLocation,
 )
-from profiles.allele import Allele as FhirAllele
+from fhir_moldef.profiles.allele import Allele as FhirAllele
 
 
 @pytest.fixture()

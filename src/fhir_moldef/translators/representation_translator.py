@@ -1,10 +1,10 @@
 from ga4gh.vrs.dataproxy import create_dataproxy
 
-from resources.moleculardefinition import (
+from fhir_moldef.resources.moleculardefinition import (
     MolecularDefinitionRepresentation,
     MolecularDefinitionRepresentationLiteral,
 )
-from translators.validations.indexing import apply_indexing
+from fhir_moldef.translators.validations.indexing import apply_indexing
 
 
 class RepresentationTranslator:

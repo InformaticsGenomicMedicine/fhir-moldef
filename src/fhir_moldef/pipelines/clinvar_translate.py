@@ -9,7 +9,7 @@ from pathlib import Path
 import orjson
 from ga4gh.vrs.models import Allele
 
-from translators.vrs_to_fhir_allele import VrsToFhirAlleleTranslator
+from fhir_moldef.translators.vrs_to_fhir_allele import VrsToFhirAlleleTranslator
 
 
 @dataclass

@@ -3,8 +3,8 @@ from copy import deepcopy
 import pytest
 from fhir.resources.reference import Reference
 
-from exceptions.fhir import ElementNotAllowedError, InvalidMoleculeTypeError
-from profiles.sequence import Sequence as FhirSequence
+from fhir_moldef.exceptions.fhir import ElementNotAllowedError, InvalidMoleculeTypeError
+from fhir_moldef.profiles.sequence import Sequence as FhirSequence
 
 
 @pytest.fixture
