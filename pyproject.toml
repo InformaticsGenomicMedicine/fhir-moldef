@@ -1,6 +1,6 @@
 [project]
 name = "fhir-moldef" 
-version = "1.0.0"
+version = "0.7.0"
 description = "A Python implementation of the HL7 FHIR MolecularDefinition resource that supports associated profiles and enables bidirectional translation between MolecularDefinition profiles and genomic representations, including VRS, HGVS, and SPDI."
 readme = "README.md"
 authors = [
