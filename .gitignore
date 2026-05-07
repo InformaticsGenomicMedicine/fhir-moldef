@@ -96,6 +96,15 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+# macOS
+.DS_Store
+
+# Environment / secrets
+.env.*
+*.pem
+*.key
+*.crt
+
 # Local use only
 Notes.md
 TODO.md
