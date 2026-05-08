@@ -47,8 +47,9 @@ It does **not** match the schema in the HL7 FHIR 6.0.0 Ballot 2 release: [FHIR B
 
 ## Installation Status
 
-This package is not currently published on PyPI but will be available soon.  
-In the meantime, clone the repository and follow the instructions below to work with the code locally.
+`fhir-moldef` is available on PyPI: [https://pypi.org/project/fhir-moldef/](https://pypi.org/project/fhir-moldef/)
+
+For users who want to work directly with the source code, local development setup instructions are also provided below.
 
 ## Prerequisites
 
@@ -116,10 +117,28 @@ Confirm the package was installed successfully
    ```bash
    pip show fhir-moldef
    ``` -->
+## Installation Steps
 
-## Local Setup
+### 1. Install `fhir-moldef` with pip
 
-Clone the repository and install the package in editable mode based on the parts of the project you want to work with.
+`fhir-moldef` is available on PyPI.
+
+```bash
+pip install fhir-moldef
+```
+### 2. Optional: install additional dependencies
+
+Additional dependency groups are available for translator functionality, example notebooks, and development tools. You can choose the dependency groups that best fit your use case.
+
+To install all optional dependency groups:
+
+```bash
+pip install "fhir-moldef[translators,notebooks,dev]"
+```
+
+## Local Development Setup
+
+Clone the repository and create a local development environment if you want to work directly with the source code.
 
 ```bash
 git clone https://github.com/InformaticsGenomicMedicine/fhir-moldef.git
