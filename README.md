@@ -1,5 +1,7 @@
 <h1 align="center">fhir-moldef</h1>
 
+[![DOI](https://zenodo.org/badge/1197534798.svg)](https://doi.org/10.5281/zenodo.20209475)
+
 ## Overview
 
 Welcome to the **fhir-moldef** repository. This project provides a Python implementation of the HL7 (Health Level Seven) Fast Healthcare Interoperability Resources (FHIR) Molecular Definition standard. It enables users to create instances of the MolecularDefinition resource and currently supports three profiles: Sequence, Allele, and Variant.
@@ -175,3 +177,7 @@ This project builds upon the following community standards and open-source imple
 - [fhir-core](https://github.com/nazrulworld/fhir-core)
 
 We gratefully acknowledge the communities and contributors who develop and maintain these standards and software projects.
+
+## Citation
+If project is used or referenced please use the following citation: 
+> Salem Bajjali. (2026). InformaticsGenomicMedicine/fhir-moldef: v0.7.1 (v0.7.1). Zenodo. https://doi.org/10.5281/zenodo.20209476
