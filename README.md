@@ -180,4 +180,4 @@ We gratefully acknowledge the communities and contributors who develop and maint
 
 ## Citation
 If project is used or referenced please use the following citation: 
-> Salem Bajjali. (2026). InformaticsGenomicMedicine/fhir-moldef: v0.7.1 (v0.7.1). Zenodo. https://doi.org/10.5281/zenodo.20209476
+> Bajjali S , Freimuth RR. InformaticsGenomicMedicine/fhir-moldef: v0.7.1. Zenodo. https://doi.org/10.5281/zenodo.20209476
