@@ -64,12 +64,23 @@ The following infrastructure is required **only for the VRS ↔ FHIR translation
 
 - **PostgreSQL 14**
 - **SeqRepo (`biocommons.seqrepo`)**
+- **`GA4GH_VRS_DATAPROXY_URI`** environment variable
 
 These dependencies are **not required** if you only plan to instantiate MolecularDefinition profiles.
 
 For instructions on installing and configuring SeqRepo, see the [VRS-Python SeqRepo installation guide](https://github.com/ga4gh/vrs-python).
 
 Containerized setup instructions using **Podman** are planned, including configuration for running SeqRepo (and future UTA support).
+
+### SeqRepo Configuration
+
+If you are using the bidirectional VRS-FHIR translator modules (or running the translator pytest suite), set `GA4GH_VRS_DATAPROXY_URI` to point to your local SeqRepo installation.
+
+```bash
+export GA4GH_VRS_DATAPROXY_URI="seqrepo+file:///usr/local/share/seqrepo/2024-12-20/"
+```
+
+This environment variable is only required for translator functionality.
 
 <!-- Additional documentation for installing SeqRepo locally is in development. A **docker-compose.yml** configuration will also be provided to run SeqRepo (and future UTA support) in a containerized environment.-->
 
